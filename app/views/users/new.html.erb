@@ -1,0 +1,31 @@
+<div class="form_header">
+  <h2>Outfit Hero Sign-up Form</h2>
+</div>
+<div class="midform">
+<%= form_tag "/users", { :method => "post", :class => "form-horizontal" } do %>
+  <div class="control-group">
+    <label class="control-label" for="first_name">First Name:</label>
+    <div class="controls">
+      <input type="text" id="first_name" placeholder="First">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="last_name">Last Name:</label>
+    <div class="controls">
+      <input type="text" id="last_name" placeholder="Last">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="email">Email:</label>
+    <div class="controls">
+      <input type="text" id="email" placeholder="example@gmail.com">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+    </div>
+  </div>
+<% end %>
+</div>
+
